@@ -1,0 +1,59 @@
+{
+  "Products": {
+    "Product_ID": "VARCHAR",
+    "Product_Name": "VARCHAR",
+    "SKU_Code": "VARCHAR",
+    "Batch_Number": "VARCHAR",
+    "Expiry_Date": "DATE",
+    "Quantity_Available": "INT",
+    "Unit_Weight": "FLOAT",
+    "Unit_Volume": "FLOAT",
+    "Fragile_Flag": "BOOLEAN",
+    "Temp_Sensitive_Flag": "BOOLEAN"
+  },
+  "Warehouses": {
+    "Warehouse_ID": "VARCHAR",
+    "Warehouse_Name": "VARCHAR",
+    "Location": "TEXT"
+  },
+  "Warehouse_Inventory": {
+    "Storage_ID": "VARCHAR",
+    "Product_ID": "VARCHAR",
+    "Warehouse_ID": "VARCHAR",
+    "Rack_Location": "VARCHAR",
+    "Zone": "VARCHAR",
+    "Storage_Type": "ENUM(Selective, Push-Back, Pallet-Flow, Drive-In)",
+    "Stored_Quantity": "INT",
+    "FIFO_Flag": "BOOLEAN",
+    "Last_Updated_Date": "DATE"
+  },
+  "Transports": {
+    "Transport_ID": "VARCHAR",
+    "Vehicle_Type": "ENUM(Bike, Mini-Truck, Van, Truck)",
+    "Mode_of_Transport": "ENUM(Road, Rail, Air, Ship)",
+    "Route_Type": "ENUM(Direct, Hub-Spoke, Multimodal)",
+    "Start_Location": "VARCHAR",
+    "End_Location": "VARCHAR",
+    "Estimated_Transit_Days": "INT",
+    "Status": "ENUM(Scheduled, In Transit, Delivered, Delayed)"
+  },
+  "Transport_Assignments": {
+    "Assignment_ID": "VARCHAR",
+    "Product_ID": "VARCHAR",
+    "Transport_ID": "VARCHAR",
+    "Dispatch_Window": "DATE",
+    "Delivery_Window": "DATE",
+    "Urgent_Flag": "BOOLEAN"
+  },
+  "Dispatches": {
+    "Dispatch_ID": "VARCHAR",
+    "Assignment_ID": "VARCHAR",
+    "Quantity_Dispatched": "INT",
+    "Dispatch_Date": "TIMESTAMP",
+    "Vehicle_ID": "VARCHAR",
+    "Operator_ID": "VARCHAR",
+    "Delivery_Status": "ENUM(Delivered, In Transit, Delayed, Failed)",
+    "Is_Damaged": "BOOLEAN",
+    "Delay_Reason": "TEXT"
+  }
+}

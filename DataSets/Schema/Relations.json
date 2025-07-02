@@ -1,0 +1,14 @@
+{
+  "Warehouse_Inventory": {
+    "Product_ID": "Products.Product_ID",
+    "Warehouse_ID": "Warehouses.Warehouse_ID"
+  },
+  "Transport_Assignments": {
+    "Product_ID": "Products.Product_ID",
+    "Transport_ID": "Transports.Transport_ID"
+  },
+  "Dispatches": {
+    "Assignment_ID": "Transport_Assignments.Assignment_ID",
+    "Vehicle_ID": "Transports.Transport_ID"
+  }
+}
