@@ -1,0 +1,7 @@
+Cluster_Label,Required_Weight,Assigned_Weight_Capacity,Required_Volume,Assigned_Volume_Capacity,Is_Weight_OK,Is_Volume_OK,Vehicle_Count
+0,65508.8,1800000,34003.3,7000000,True,True,200
+1,53445.6,1719000,28632.4,6685000,True,True,191
+2,88379.4,1674000,44199.799999999996,6510000,True,True,186
+3,89536.6,1755000,47256.8,6825000,True,True,195
+4,56177.4,1683000,28007.0,6545000,True,True,187
+5,56566.0,1791000,30131.2,6965000,True,True,199
